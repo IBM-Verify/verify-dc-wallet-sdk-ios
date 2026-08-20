@@ -103,14 +103,6 @@ This fork uses independent semver (`vMAJOR.MINOR.PATCH`) starting at `v1.0.0`.
 
 ---
 
-## Support
-
-- **Consuming app:** [IBM-Verify/verify-app-v3-ios](https://github.ibm.com/IBM-Verify/verify-app-v3-ios)
-- **Upstream repo:** [eu-digital-identity-wallet/eudi-lib-ios-wallet-kit](https://github.com/eu-digital-identity-wallet/eudi-lib-ios-wallet-kit)
-- **IBM team contact:** Craig Pearson — craigaps@au1.ibm.com
-
----
-
 ## License
 
 Licensed under the Apache License, Version 2.0. See [LICENSE](LICENSE) for the full text.
