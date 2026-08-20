@@ -1,13 +1,11 @@
 // swift-tools-version: 6.0
-// The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
 
 let package = Package(
-	name: "EudiWalletKit",
+	name: "IBM Verify DC",
 	platforms: [.macOS(.v14), .iOS(.v16), .watchOS(.v10)],
 	products: [
-		// Products define the executables and libraries a package produces, making them visible to other packages.
 		.library(
 			name: "EudiWalletKit",
 			targets: ["EudiWalletKit"])
@@ -19,11 +17,9 @@ let package = Package(
 		.package(url: "https://github.com/eu-digital-identity-wallet/eudi-lib-ios-openid4vci-swift.git", exact: "0.41.0"),
 		.package(url: "https://github.com/eu-digital-identity-wallet/eudi-lib-ios-openid4vp-swift.git", exact: "0.35.0"),
 		.package(url: "https://github.com/eu-digital-identity-wallet/eudi-lib-ios-statium-swift.git", exact: "0.5.0"),
-    	.package(url: "https://github.com/apple/swift-docc-plugin", from: "1.5.0"),
+		.package(url: "https://github.com/apple/swift-docc-plugin", from: "1.5.0"),
 	],
 	targets: [
-		// Targets are the basic building blocks of a package, defining a module or a test suite.
-		// Targets can depend on other targets in this package and products from dependencies.
 		.target(
 			name: "EudiWalletKit",
 			dependencies: [
@@ -36,7 +32,7 @@ let package = Package(
 			]
 		),
 		.testTarget(
-			name: "EudiWalletKitTests",
+			name: "IBMVerifyDCTests",
 			dependencies: ["EudiWalletKit"],
 			resources: [.process("Resources")]
 		),
